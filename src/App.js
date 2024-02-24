@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 
 function App() {
-  const [number, setNumber] = useState('');
+  const [number, setNumber] = useState(0);
   const [result, setResult] = useState('');
 
   const handleInputChange = (e) => {
@@ -30,7 +30,9 @@ function App() {
   };
   return (
     <div className="calculator-container">
-      <h2 className="calculator-header">Scientific Calculator</h2>
+      <h2 className="calculator-header">SCIENTIFIC CALCULATOR</h2>
+      <br />
+      <h3>Enter the value of x : </h3>
       <input type="number" className="calculator-input" value={number} onChange={handleInputChange} />
       <br />
       <button className="calculator-button" onClick={handleSquareRoot}>Square Root (√x)</button>
@@ -38,7 +40,7 @@ function App() {
       <button className="calculator-button" onClick={handleNaturalLog}>Natural Logarithm (ln(x))</button>
       <button className="calculator-button" onClick={handlePower}>Power (x^b)</button>
       <br />
-      <h3 className="calculator-result">Result: {result}</h3>
+      <h3 className="calculator-result">Result : {result}</h3>
     </div>
   );
 }
