@@ -1,14 +1,14 @@
 ---
 - name: Pull Docker Image from Docker Hub
   hosts: localhost
-  remote_user: vickypanchal
+  remote_user: parag0501
   become: false
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
     - name: Pull Docker Image
       docker_image:
-        name: "vickypanchal/calculator"
+        name: "parag0501/calculator"
         source: pull
       register: docker_pull_result
 
@@ -26,4 +26,4 @@
       ignore_errors: true
 
     - name: Running container
-      shell: docker run -it -d --name calculator vickypanchal/calculator
+      shell: docker run -it -d --name calculator parag0501/calculator
