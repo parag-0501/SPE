@@ -32,7 +32,6 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
 .calculator-button {
   display: inline-block;
   width: 100%;
@@ -46,11 +45,9 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .calculator-button:hover {
   background-color: #ff2c2c ;
 }
-
 .calculator-font {
   margin-top: 20px;
   
