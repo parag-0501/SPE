@@ -30,7 +30,7 @@ function App() {
   };
   return (
     <div className="calculator-container">
-      <h2 className="calculator-header">SCIENTIFIC cALCULATOR</h2>
+      <h2 className="calculator-header">SCIENTIFIC CALCULATOR</h2>
       <br />
       <h3 className="calculator-font">Enter the value of x:</h3>
       <input type="number" className="calculator-input" value={number} onChange={handleInputChange} />
